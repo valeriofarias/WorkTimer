@@ -5,6 +5,7 @@ This app calculates the worked time in a particular day. So you'll know the time
 This app get the data from the file schedule.txt. You should write the data on it like the example bellow:
 
 8,05/09/2017,8:16,8:39,8:41,11:13,11:21,12:15,14:11,14:30
+
 8,05/09/2017,8:16,8:39, 8:41,11:13, 11:21,12:15, 14:11,14:30, 14:31:35,18:04:25, 18:09:52,18:11:29
 
 The pattern above means: 
@@ -20,6 +21,7 @@ Then look for the folder Report and open the specific file with your result.
 ## The result looks like this:
 
 |hours per day:8| Date: 05/09/2017| worked time:04:08:00| hours per day minus worked time:-03:52:00
+
 |hours per day:8| Date: 05/09/2017| Worked Time:07:42:27| hours per day minus worked time:-00:17:33
 
 
@@ -39,6 +41,7 @@ Carga horária, Data, entrada, saída, entrada, saída
 ## ex:
 
 8,05/09/2017,8:16,8:39,8:41,11:13,11:21,12:15,14:11,14:30
+
 8,05/09/2017,8:16,8:39, 8:41,11:13, 11:21,12:15, 14:11,14:30, 14:31:35,18:04:25, 18:09:52,18:11:29
 
 Com os dados cadastrados no arquivo calendario.txt basta dar um duplo clique no aplicativo WorkTimer. 
@@ -47,6 +50,7 @@ Assim que ele efetuar o processamento acesse a pasta relatório e abra o arquivo
 ## O Resultado do exemplo anterior é o seguinte:
 
 |CH:8| Data: 05/09/2017| Tempo trabalho:04:08:00| CH menos tempo trabalho:-03:52:00
+
 |CH:8| Data: 05/09/2017| Tempo trabalho:07:42:27| CH menos tempo trabalho:-00:17:33
 
 O sinal negativo no último valor indica que a pessoa trabalhou menos do que a carga-horária estipulada, portanto está devendo horas.
