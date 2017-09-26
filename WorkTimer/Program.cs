@@ -18,10 +18,17 @@ namespace WorkTimer
             string log = "";
 
             var arquivo = "";
+            var path = Environment.CurrentDirectory;
+
             if (File.Exists("schedule.txt"))
                 arquivo = "schedule.txt";
             else if (File.Exists("calendario.txt"))
                 arquivo = "calendario.txt";
+            else if (File.Exists("../calendario.txt"))
+            {
+                arquivo = "../calendario.txt";
+                path = "..";
+            }
             else
                 File.Create("calendario.txt");
 
@@ -82,10 +89,10 @@ namespace WorkTimer
                
             }
 
-            System.IO.File.WriteAllText(Environment.CurrentDirectory + "/Relatorio/relatorio" + (DateTime.Now.ToString().Replace("/","-")).Replace(":","_")+".txt", log);
+            System.IO.File.WriteAllText(path + "/Relatorio/relatorio" + (DateTime.Now.ToString().Replace("/","-")).Replace(":","_")+".txt", log);
 
             Console.WriteLine(log);
-            //Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
