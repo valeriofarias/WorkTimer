@@ -92,6 +92,9 @@ namespace WorkTimer
             System.IO.File.WriteAllText(path + "/Relatorio/relatorio" + (DateTime.Now.ToString().Replace("/","-")).Replace(":","_")+".txt", log);
 
             Console.WriteLine(log);
+
+            Console.WriteLine();
+            Console.WriteLine("Aperte ENTER para finalizar...");
             Console.ReadLine();
         }
     }
