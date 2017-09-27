@@ -280,5 +280,6 @@ __pycache__/
 
 # exclude everything
 WorkTimer/Relatorio/*.txt
+WorkTimer/Report/*.txt
 
 !.gitkeep
