@@ -39,7 +39,7 @@ Open cmd prompt and access the root directory of the app and digit:
 5. Open app folder and create a Windows shortcut from WorkTimer.exe file. 
 6. Copy the shortcut to root folder WorkTimer
 8. Create a new file called schedulle.txt in root folder WorkTimer and add to it the data. Eg: `8,07/09/2017,8:00,12:00,14:00,18:00`
-9. bouble click on the shortcut WorkTimer
+9. Double click on the shortcut WorkTimer
 10. Finally access the folder report to see the results
 
 ### Bellow helper in Portuguese
