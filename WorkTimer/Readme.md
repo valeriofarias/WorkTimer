@@ -30,7 +30,7 @@ Open cmd prompt and access the root directory of the app and digit:
 
 'dotnet publish -c release -r win-x64'
 
-## Instaling in other machine with Windows 64 bits
+## Installing in other machine with Windows 64 bits
 
 1. Create a folder with the name WorkTimer
 2. Inside of WorkTimer folder make a new folder with report name
