@@ -24,6 +24,23 @@ Then look for the folder Report and open the specific file with your result.
 
 |hours per day:8| Date: 05/09/2017| Worked Time:07:42:27| hours per day minus worked time:-00:17:33
 
+## publishing the app
+
+Open cmd prompt and access the root directory of the app and digit:
+
+'dotnet publish -c release -r win-x64'
+
+## Instaling in other machine with Windows 64 bits
+
+1. Create a folder with the name WorkTimer
+2. Inside of WorkTimer folder make a new folder with report name
+3. Inside of WorkTimer make a new folder with app name
+4. Copy al files from folder \bin\Release\netcoreapp2.0\win-x64\publish to the app folder
+5. Open app folder and create a Windows shortcut from WorkTimer.exe file. 
+6. Copy the shortcut to root folder WorkTimer
+8. Create a new file called schedulle.txt in root folder WorkTimer and add to it the data. Eg: `8,07/09/2017,8:00,12:00,14:00,18:00`
+9. bouble click on the shortcut WorkTimer
+10. Finally access the folder report to see the results
 
 ### Bellow helper in Portuguese
 
@@ -56,8 +73,21 @@ Assim que ele efetuar o processamento acesse a pasta relatório e abra o arquivo
 O sinal negativo no último valor indica que a pessoa trabalhou menos do que a carga-horária estipulada, portanto está devendo horas.
 O sinal positivo indica que a pessoa trabalhou mais do que a carga-horária e portanto possui bônus hora.
 
-## publicação do arquivo 
+## publicação do app 
 
-`dotnet publish --self-contained`
+'dotnet publish -c release -r win-x64'
+
+## Instalação em outra máquina
+
+1. Cria uma pasta como o nome WorkTimer
+2. Dentro da pasta WorkTimer cria uma pasta com o nome Relatorio
+3. Dentro da pasta WorkTimer cria uma pasta como o nome app
+4. Copia todos os arquivos que estão na pasta \bin\Release\netcoreapp2.0\win-x64\publish para a pasta app dentro dessa pasta WorkTimerque acabou de ser criada
+5. Abre a pasta app e cria um atalho de Windows, a partir do arquivo WorkTimer.exe. 
+6. Copia esse atalho criado para a pasta raiz WorkTimer
+8. Cria um arquivo com o nome calendario.txt na pasta raiz WorkTimer e preenche com os dados a serem processados. Ex: `8,07/09/2017,8:00,12:00,14:00,18:00`
+9. Após isso dá um duplo clique no atalho WorkTimer
+10. Acessa a pasta relatório e abre os arquivos para ver os resultados.
+
 
 
